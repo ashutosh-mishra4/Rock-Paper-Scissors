@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="hover-min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+
+  <title>Frontend Mentor | Rock, Paper, Scissors</title>
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+</head>
+
+<body class="body">
+  <section class="header animate__zoomIn">
+    <img src="images\logo.svg" alt="" class="header__img">
+    <div class="header__scorecard">
+      <span>Score</span><br />
+      <span class="header__value">0</span>
+    </div>
+  </section>
+
+  <!--<section>Rules</section>-->
+
+  <section class="options-screen" id="options">
+
+    <button class="options-screen__button options-screen__button--paper hvr-grow" id="paper">
+      <span class="options-screen__wrapper">
+        <img src="images\icon-paper.svg" alt="paper-icon" class="options-screen__img">
+      </span>
+    </button>
+
+    <button class="options-screen__button options-screen__button--scissors hvr-grow" id="scissors">
+      <span class="options-screen__wrapper">
+        <img src="images\icon-scissors.svg" alt="scissors-icon" class="options-screen__img">
+      </span>
+    </button>
+
+    <button class="options-screen__button options-screen__button--rock hvr-grow" id="rock">
+      <span class="options-screen__wrapper">
+        <img src="images\icon-rock.svg" alt="rock-icon" class="options-screen__img">
+      </span>
+    </button>
+  </section>
+
+  <section class="result-screen">
+
+    <div class="result-screen__player">
+      <p class="result-screen__para">You Picked</p>
+
+      <button class="result-screen__button result-screen__button--player">
+        <span class="result-screen__wrapper">
+          <img src="images\icon-paper.svg" alt="rock-icon" class="result-screen__img result-screen__img--player">
+        </span>
+    </button>
+    </div>
+
+    <div class="result-screen__results animate__animated animate__zoomIn">
+      <p class="result-screen__text"></p>
+      <button class="result-screen__play-again hvr-grow">Play Again</button>
+    </div>
+    
+
+    <div class="result-screen__computer">
+      <p class="result-screen__para">The House Picked</p>
+  
+      <button class="result-screen__button result-screen__button--computer" id="computerButton">
+        <span class="result-screen__wrapper">
+          <img src="images\icon-scissors.svg" alt="rock-icon" class="result-screen__img result-screen__img--computer" >
+        </span>
+      </button>
+    </div>
+  </section>
+  
+  <article class="rules">
+    <h3 class="rules__btn hvr-fade">rules</h3>
+
+    <section class="rules__box animate__animated animate__heartBeat">
+      <div class="rules__header">
+        <p class="rules__text">rules</p>
+        <img src="images\icon-close.svg" alt="" class="rules__close hvr-grow">
+      </div>
+      <img src="images\image-rules.svg" alt="" class="rules__img">
+  </article>
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Made by <a href="#">Ashutosh Mishra</a>.
+  </div>
+</body>
+<script src="index.js"></script>
+
+</html>
